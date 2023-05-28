@@ -1,0 +1,341 @@
+--TABLE OF CUSTOMERS
+----------------------------------------------------------------------------------------
+--TABLE STRUCTURE for customers
+CREATE TABLE customers(
+  cust_id INT(4) PRIMARY KEY,
+  last_name VARCHAR (20) NOT NULL, 
+  first_name VARCHAR (20), 
+  mid_name VARCHAR (20) NOT NULL, 
+  city VARCHAR (20), 
+  mob_no INT(10), 
+  age INT(3)
+);
+
+--inserting data in customers tables
+INSERT INTO customers(cust_id, last_name, first_name, mid_name, city, mob_no, age)
+VALUES
+('0001', 'AMRE', 'SAKSHI', 'NIRMALA', 'Khar', '6895166142', '40'),
+('0002', 'BAIT', 'SAGAR', 'SHUBHANGI', 'Malad', '7392335242', '59'),
+('0003', 'BHATE', 'AKSHADA', 'SUKHADA', 'Borivali', '6719913824', '43'),
+('0004', 'BOBALE', 'DIVYA', 'DARSHANA', 'Andheri', '1669128234', '39'),
+('0005', 'CHAUKEKAR', 'DISHA', 'PRIYA', 'Churchgate', '2412166078', '47'),
+('0006', 'CHAVAN', 'ANKITA', 'ARCHANA', 'Santacruz', '7431656944', '44'),
+('0007', 'CHAWAN', 'CHINMAY', 'ANTARA', 'Khar', '2373759918', '52'),
+('0008', 'CHOPDEKAR', 'SHREYA', 'MANGALYA', 'Malad', '6058326420', '55'),
+('0009', 'GAJJARLA', 'DEEPTI', 'VIJAYLAXMI', 'Borivali', '6765999205', '49'),
+('0010', 'GHAG', 'SAYALI', 'SAMRUDDHI', 'Andheri', '3799886446', '24'),
+('0011', 'JADHAV', 'SAMIKSHA', 'KARUNA', 'Churchgate', '8570089969', '42'),
+('0012', 'JAIN', 'ANANYA', 'VANDANA', 'Santacruz', '7848069496', '18'),
+('0013', 'JALVI', 'SAKSHI', 'VARNITA', 'Khar', '3303549137', '22'),
+('0014', 'KABDULE', 'DHANVANTARI', 'RITIKA', 'Malad', '4853039208', '34'),
+('0015', 'KADAM', 'MAYURI', 'SHWETA', 'Borivali', '2863217896', '57'),
+('0016', 'KADAM', 'EESHA', 'SANDHYA', 'Andheri', '7228815038', '41'),
+('0017', 'KADAM', 'SHREYA', 'SNEHA', 'Churchgate', '6759410349', '26'),
+('0018', 'KADAM', 'TANVI', 'NEELAM', 'Santacruz', '3265189698', '30'),
+('0019', 'KAMBLE', 'AKSHATA', 'SUSHMA', 'Khar', '8808501251', '54'),
+('0020', 'KAMBLI', 'VIBHAV', 'MANALI', 'Malad', '8879609718', '38'),
+('0021', 'KARNIK', 'SAIRAAJ', 'GAYATRI', 'Borivali', '4724563960', '58'),
+('0022', 'KASHYAP', 'ROHAN', 'MEENA', 'Andheri', '2200527769', '30'),
+('0023', 'KERKAR', 'SANIKA', 'AARTI', 'Churchgate', '4723000730', '53'),
+('0024', 'KHADAS', 'NILAM', 'SUVARNA', 'Santacruz', '8221126291', '44'),
+('0025', 'KHANDALEKAR', 'ANURAG', 'DAYA', 'Khar', '9561246554', '54'),
+('0026', 'KINI', 'DWEEP', 'SHEETAL', 'Malad', '0399191205', '29'),
+('0027', 'KUMBHAR', 'HARSH', 'RAMILA', 'Borivali', '0347836853', '59'),
+('0028', 'MHATRE', 'SANIKA', 'MEENAL', 'Andheri', '3771011465', '25'),
+('0029', 'MONDKAR', 'TUSHAR', 'SHALINI', 'Churchgate', '9263153970', '24'),
+('0030', 'NARSAGALLA', 'DIMPAL', 'LALITA', 'Santacruz', '0277156379', '20'),
+('0031', 'NARVEKAR', 'DAKSHATA', 'RAJANI', 'Khar', '4936569858', '36'),
+('0032', 'PADWAL', 'PRATIK', 'SAMIKSHA', 'Malad', '5874668175', '26'),
+('0033', 'PANERIA', 'BHAVIKA', 'LATA', 'Borivali', '0748034007', '21'),
+('0034', 'PANSARE', 'PAYAL', 'NUTAN', 'Andheri', '2182336863', '45'),
+('0035', 'PARAB', 'TANAY', 'NUTAN', 'Churchgate', '2896646542', '18'),
+('0036', 'PARANJAPE', 'SANIKA', 'NEHA', 'Santacruz', '1183419423', '56'),
+('0037', 'PARMAR', 'AARTI', 'DARSHANA', 'Khar', '0360079526', '22'),
+('0038', 'PATEL', 'JITESH', 'GEETA', 'Malad', '1854188708', '49'),
+('0039', 'PATIL', 'SURABHI', 'PRASHALI', 'Borivali', '9406578321', '19'),
+('0040', 'PATIL', 'CHIRAG', 'PRIYA', 'Andheri', '4699761100', '38'),
+('0041', 'PAWAR', 'MRUNMAI', 'DEEPASHREE', 'Churchgate', '7256476837', '52'),
+('0042', 'PAWASKAR', 'HARSH', 'SAMIDHA', 'Santacruz', '3294184745', '45'),
+('0043', 'POOJARY', 'HIMANSHU', 'LEELA', 'Khar', '8869935611', '37'),
+('0044', 'PATIL', 'PRATHAMESH', 'KUSUM', 'Malad', '8375648130', '25'),
+('0045', 'PUROHIT', 'AYUSHI', 'JYOTI', 'Borivali', '1158563118', '30'),
+('0046', 'RACCHA', 'KHUSHI', 'VANASHRI', 'Andheri', '6540600326', '39'),
+('0047', 'RAMANE', 'SIDDHI', 'MOHINI', 'Churchgate', '5750044125', '26'),
+('0048', 'RATHOD', 'KIRAN', 'GEETA', 'Santacruz', '3550302175', '51'),
+('0049', 'RAVARIYA', 'VAISHALI', 'DEVI', 'Khar', '1271666257', '54'),
+('0050', 'YEWALE', 'KHUSHI', 'AARTI', 'Khar', '6895166142', '40');
+
+
+--TABLE STRUCTURE for accounts
+---------------------------------------------------------------------------------------
+CREATE TABLE accounts (
+  Ac_no INT(17) PRIMARY KEY,
+  Type_ac VARCHAR(10),
+  cust_id INT(4),
+  balance INT(15) DEFAULT '0',
+  FOREIGN KEY (cust_id) REFERENCES customers(cust_id)
+);
+
+--inserting data in account table
+INSERT INTO accounts(Ac_no, Type_ac, cust_id, balance)
+VALUES
+('9370016399049600', 'Saving', '0001', '150000'),
+('9370016399049601', 'Current', '0002', '120000'),
+('9370016399049602', 'Saving', '0003', '175000'),
+('9370016399049603', 'Saving', '0004', '98000'),
+('9370016399049604', 'Current', '0005', '135000'),
+('9370016399049605', 'Saving', '0006', '75000'),
+('9370016399049606', 'Saving', '0007', '89000'),
+('9370016399049607', 'Current', '0008', '105000'),
+('9370016399049608', 'Saving', '0009', '142000'),
+('9370016399049609', 'Saving', '0010', '99000'),
+('9370016399049610', 'Saving', '0011', '125000'),
+('9370016399049611', 'Current', '0012', '98000'),
+('9370016399049612', 'Saving', '0013', '115000'),
+('9370016399049613', 'Current', '0014', '82000'),
+('9370016399049614', 'Current', '0015', '95000'),
+('9370016399049615', 'Current', '0016', '168000'),
+('9370016399049616', 'Saving', '0017', '73000'),
+('9370016399049617', 'Saving', '0018', '88000'),
+('9370016399049618', 'Current', '0019', '113000'),
+('9370016399049619', 'Saving', '0020', '94000'),
+('9370016399049620', 'Saving', '0021', '142000'),
+('9370016399049621', 'Current', '0022', '105000'),
+('9370016399049622', 'Current', '0023', '121000'),
+('9370016399049623', 'Saving', '0024', '78000'),
+('9370016399049624', 'Saving', '0025', '135000'),
+('9370016399049625', 'Current', '0026', '97000'),
+('9370016399049626', 'Current', '0027', '115000'),
+('9370016399049627', 'Current', '0028', '87000'),
+('9370016399049628', 'Saving', '0029', '99000'),
+('9370016399049629', 'Saving', '0030', '124000'),
+('9370016399049630', 'Saving', '0031', '89000'),
+('9370016399049631', 'Current', '0032', '101000'),
+('9370016399049632', 'Saving', '0033', '133000'),
+('9370016399049633', 'Current', '0034', '76000'),
+('9370016399049634', 'Saving', '0035', '93000'),
+('9370016399049635', 'Current', '0036', '146000'),
+('9370016399049636', 'Saving', '0037', '82000'),
+('9370016399049637', 'Saving', '0038', '97000'),
+('9370016399049638', 'Saving', '0039', '114000'),
+('9370016399049639', 'Current', '0040', '90000'),
+('9370016399049640', 'Current', '0041', '138000'),
+('9370016399049641', 'Saving', '0042', '104000'),
+('9370016399049642', 'Saving', '0043', '118000'),
+('9370016399049643', 'Saving', '0044', '87000'),
+('9370016399049644', 'Current', '0045', '102000'),
+('9370016399049645', 'Saving', '0046', '131000'),
+('9370016399049646', 'Saving', '0047', '78000'),
+('9370016399049647', 'Current', '0048', '95000'),
+('9370016399049648', 'Saving', '0049', '126000'),
+('9370016399049649', 'Saving', '0050', '202500');
+
+
+--CASH DEPARTMENT
+---------------------------------------------------------------------------------------
+----TABLE STRUCTURE for standardsize_refund_money
+CREATE TABLE standardsize_refund_money(
+Denomination VARCHAR(4) NOT NULL,
+Lenght_cm DECIMAL(2,1),
+Width_cm DECIMAL (2,1),
+Area DECIMAL (4,2),
+Minimum_Area_For_Full_Value VARCHAR(3),
+Minimum_Area_For_Half_Value VARCHAR(3),
+PRIMARY KEY (Denomination)
+);
+
+--putting data in "standardsize_refund_size"
+INSERT INTO standardsize_refund_money 
+('Denomination','Lenght_cm', 'Width_cm', 'Area','Minimum_Area_For_Full_Value','Minimum_Area_for_Half_Value') VALUES
+('10','12.3','6.3','81.18','41','0'),
+('20','12.9','6.3','85.14','43','0'),
+('50','13.5','6.6','89.10','72','36'),
+('100','14.2','6.6','93.27','75','38'),
+('200','14.6','6.6','96.36','78','39'),
+('500','15.0','6.6','99','80','40'),
+('2000','16.6','6.6','109.56','88','44'); 
+
+--TABLE STRUCTURE for fake_note
+CREATE TABLE fake_notes (
+Denomination VARCHAR(4),
+Number_of_notes VARCHAR(7) DEFAULT '0',
+Total_amount INT(15) DEFAULT '0'
+);
+
+--putting data in table "fake_notes"
+INSERT INTO fake_notes('Denomination','Number_of_notes','Total_amount') VALUES
+('2000','20','40000'),
+('500','50','25000'),
+('200','20','4000'),
+('100','5','500'),
+('50','200','10000'),
+('10','1','10');
+INSERT INTO fake_notes(Denomination) VALUES ('20');
+
+
+--TABLE STRUCTURE for soiled_notes
+CREATE TABLE soiled_notes 
+( Denomination VARCHAR(4) NOT NULL,
+  Number_of_notes VARCHAR(7),
+  Total_amount INT(15)
+);
+
+--putting data in table "soiled_notes"
+INSERT INTO soiled_notes('Denomination','Number_of_notes','Total_amount') VALUES
+('2000','40','80000'),
+('500','30','15000'),
+('200','40','8000'),
+('100','50','5000'),
+('50','20','1000'),
+('20','200','4000'),
+('10','500','5000')
+;
+
+
+--TABLE STRUCTURE for token_register
+CREATE TABLE token_register (
+Source_file VARCHAR (20) NOT NULL,
+No_of_token_file VARCHAR (5),
+PRIMARY KEY(Source_file)
+  );
+ 
+--putting data in table "token_register" 
+INSERT INTO token_register ('Source_file','No_of_token_file') VALUES
+('Sample_1','124'),
+('Sample_2','437'),
+('Sample_3','465'),
+('Sample_4','973'),
+('Sample_5','752'),
+('Sample_6','111'),
+('Sample_7','742'),
+('Sample_8','645'),
+('Sample_9','679'),
+('Sample_10','642'),
+('Sample_11','846'),
+('Sample_12','897'),
+('Sample_13','801'),
+('Sample_14','605'),
+('Sample_15','704'),
+('Sample_16','763'),
+('Sample_17','739'),
+('Sample_18','703'),
+('Sample_19','404'),
+('Sample_20','439'),
+('Sample_21','546'),
+('Sample_22','589'),
+('Sample_23','533'),
+('Sample_24','688'),
+('Sample_25','994'),
+('Sample_26','882'),
+('Sample_27','212'),
+('Sample_28','238'),
+('Sample_29','679'),
+('Sample_30','331')
+;
+
+
+CREATE TABLE cash_flow (
+  transaction_no INT(5) PRIMARY KEY,
+  DATE,
+  Particulars VARCHAR(15),
+  Ac_no VARCHAR(17),
+  Amount_Cr INT(7),
+  Amount_Dr INT(7),
+  FOREIGN KEY (Ac_no) REFERENCES accounts(Ac_no)
+);
+
+-- Putting data in table "cash_flow_statement"
+
+INSERT INTO cash_flow ('transaction_no', 'DATE', 'Particulars', 'Ac_no', 'Amount_Dr', 'Amount_Cr') VALUES
+('1', '2022-06-15', 'Deposit', '9370016399049600', '50000', '0'),
+('2', '2022-06-16', 'Deposit', '9370016399049601', '5000', '0'),
+('3', '2022-07-16', 'Withdrawal', '9370016399049602', '0', '4000'),
+('4', '2022-07-19', 'Withdrawal', '9370016399049603', '0', '5000'),
+('5', '2022-07-24', 'Deposit', '9370016399049604', '50000', '0'),
+('6', '2022-07-26', 'Withdrawal', '9370016399049605', '0', '20500'),
+('7', '2022-08-01', 'Deposit', '9370016399049606', '65000', '0'),
+('8', '2022-08-05', 'Deposit', '9370016399049607', '18000', '0'),
+('9', '2022-09-06', 'Withdrawal', '9370016399049608', '0', '1000'),
+('10', '2022-09-12', 'Withdrawal', '9370016399049609', '0', '5600'),
+('11', '2022-10-01', 'Deposit', '9370016399049610', '3500', '0'),
+('12', '2022-10-09', 'Withdrawal', '9370016399049611', '0', '1500'),
+('13', '2022-11-16', 'Withdrawal', '9370016399049612', '0', '40000'),
+('14', '2022-11-19', 'Withdrawal', '9370016399049613', '0', '7000'),
+('15', '2022-12-24', 'Deposit', '9370016399049614', '6900', '0'),
+('16', '2022-12-26', 'Withdrawal', '9370016399049615', '0', '2500'),
+('17', '2023-01-01', 'Deposit', '9370016399049616', '6500', '0'),
+('18', '2023-02-15', 'Deposit', '9370016399049617', '28000', '0'),
+('19', '2023-02-22', 'Withdrawal', '9370016399049618', '0', '8000'),
+('20', '2023-03-12', 'Withdrawal', '9370016399049619', '0', '5670');
+
+--FOREX DEPARTMENT
+-----------------------------------------------------------------------------------------
+--TABLE STRUCTURE for forex_department
+CREATE TABLE forex (
+  cust_id INT(4) PRIMARY KEY,
+  Timestamp,
+  first_name VARCHAR(20),
+  last_name VARCHAR(20),
+  ac_no INT (17),
+  Currency_pair VARCHAR(15),
+  Transaction_type VARCHAR(4),
+  Credit_amount INT(10) DEFAULT '0',
+  Debit_amount INT(10) DEFAULT '0',
+  Commission VARCHAR(5),
+  Tax DECIMAL(4,4)
+);
+
+INSERT INTO forex (cust_id, Timestamp, First_name, Last_name, Ac_no, Currency_pair, Transaction_type, Credit_amount, Debit_amount, Commission, Tax)
+VALUES
+('0011', '2022-04-15 12:12:00', 'SAMIKSHA', 'JADHAV', '9370016399049610', 'USD/INR', 'Buy', 0, 25110, '100', '0.2511'),
+('0012', '2022-05-26 15:10:00', 'ANANYA', 'JAIN', '9370016399049611', 'EUR/INR', 'Sell', 75000, 0, '200', '0.7500'),
+('0013', '2022-06-11 13:50:00', 'SAKSHI', 'JALVI', '9370016399049612', 'JPY/INR', 'Sell', 0, 250000, '200', '2.5000'),
+('0014', '2022-06-29 16:10:00', 'DHANVANTARI', 'KABDULE', '9370016399049613', 'USD/EUR', 'Buy', 4210, 0, '100', '0.0421'),
+('0015', '2022-07-1 11:42:00', 'MAYURI', 'KADAM', '9370016399049614', 'GBP/INR', 'Buy', 20000, 0, '100', '0.2000'),
+('0025', '2022-07-15 10:43:20', 'ANURAG', 'KHANDALEKAR', '9370016399049624', 'INR/JPY', 'Sell', 0, 8000, '100', '0.0800'),
+('0026', '2022-07-24 12:56:40', 'DWEEP', 'KINI', '9370016399049625', 'AED/INR', 'Buy', 8600, 0, '100', '0.0860'),
+('0027', '2022-08-24 12:36:36', 'HARSH', 'KUMBHAR', '9370016399049626', 'OMR/INR', 'Sell', 0, 49000, '100', '0.4900'),
+('0028', '2022-10-17 14:23:45', 'SANIKA', 'MHATRE', '9370016399049627', 'INR/CAD', 'Sell', 0, 51000, '200', '0.5100'),
+('0029', '2022-12-6 11:32:50', 'TUSHAR', 'MONDKAR', '9370016399049628', 'CAD/INR', 'Buy', 56000, 0, '200', '0.5600');
+
+  
+--NEFT DEPARTMENT
+------------------------------------------------------------------------------------------
+--TABLE STRUCTURE for neft
+CREATE TABLE neft(
+  utr_ref_no VARCHAR (20) PRIMARY KEY,
+  creation_time TIMESTAMP,
+  sender_ifsc VARCHAR (20),
+  sender_ac INT (17),
+  receiver_ifsc VARCHAR (20),
+  receiver_ac INT (17),
+  amount DECIMAL (7,2) NOT NULL,
+  remark VARCHAR (20),
+  status VARCHAR (50),
+  FOREIGN KEY (sender_ac) REFERENCES accounts(Ac_no)
+);
+
+
+--putting data in table "neft_allocation"
+INSERT INTO neft (utr_ref_no, creation_time, sender_ifsc, sender_ac, receiver_ifsc, receiver_ac, amount, remark, status)
+VALUES
+('FTYBR10000004321041916', '2022-06-08 12:05:05', 'FBIN0015001', 9370016399049600, 'KCCB0VTV009', 2020016400302590, 12678.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000001210090732', '2022-06-18 03:26:09', 'FBIN0015001', 9370016399049601, 'BKID0002016', 2020016400439770, 31000.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000003121582022', '2022-07-19 12:45:35', 'FBIN0015001', 9370016399049602, 'HDFC0000017', 2020016400289090, 55890.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000004772071942', '2022-07-25 14:35:30', 'FBIN0015001', 9370016399049603, 'HDFC0000006', 2020016400273600, 200000.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000001901485190', '2022-08-04 17:25:37', 'FBIN0015001', 9370016399049604, 'ICIC0000004', 2020016400282020, 356000.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000002502386598', '2022-08-19 07:07:27', 'FBIN0015001', 9370016399049605, 'UTIB000080', 2020016400455330, 633000.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000001700533544', '2022-08-23 18:15:05', 'FBIN0015001', 9370016399049606, 'KCCB0VTV009', 2020016400276770, 987000.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000001179996080', '2022-09-16 12:50:29', 'FBIN0015001', 9370016399049607, 'BARB0VANTHW', 2020016400280460, 995000.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000005303235002', '2022-09-29 08:36:26', 'FBIN0015001', 9370016399049608, 'PUNB0160700', 2020016400321010, 575000.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000004823784582', '2022-10-08 10:04:05', 'FBIN0015001', 9370016399049609, 'HDFC0000006', 2020016400270470, 3597.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000004904659490', '2022-10-18 23:26:49', 'FBIN0015001', 9370016399049610, 'BKID0002016', 2020016400302970, 22344.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000002091090244', '2022-10-19 12:05:25', 'FBIN0015001', 9370016399049611, 'KCCB0VTV009', 2020016400302900, 45595.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000002234324136', '2022-11-25 14:35:30', 'FBIN0015001', 9370016399049612, 'UTIB0000080', 2020016400286880, 78259.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000001332435618', '2022-11-27 17:55:37', 'FBIN0015001', 9370016399049613, 'BKID0002026', 2020016400276780, 125369.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000003689288632', '2022-11-30 09:07:37', 'FBIN0015001', 9370016399049614, 'BKDN0230102', 2020016400276750, 520540.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000000954464988', '2022-12-02 12:18:05', 'FBIN0015001', 9370016399049615, 'SYNB0007010', 2020016400276500, 752230.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000001165845236', '2022-12-16 12:50:29', 'FBIN0015001', 9370016399049616, 'UTIB0000080', 2020016400273490, 955200.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000003909089728', '2022-12-29 08:56:26', 'FBIN0015001', 9370016399049617, 'HDFC0001676', 2015016401464870, 850250.00, 'Sent Successfully', 'Credited to Customer'),
+('FTYBR10000004824889758', '2023-01-16 12:40:30', 'FBIN0015001', 9370016399049618, 'HDFC0000017', 2020016400228340, 825340.00, 'Sent Successfully', 'Delivered to Beneficiary Bank'),
+('FTYBR10000001893569798', '2023-01-29 08:08:08', 'FBIN0015001', 9370016399049619, 'UTIB0000080', 2020016400286880, 78259.00, 'Sent Successfully', 'Credited to Customer');
